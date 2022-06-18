@@ -2,8 +2,16 @@
 Console.WriteLine("Введите число N: ");
 int N = int.Parse(Console.ReadLine());
 int count = 2;
-while(count < N)
+if(N>0)
+{
+   while(count < N)
 {
     Console.Write($"{count} ");
     count += 2;
+} 
 }
+else
+{
+    Console.Write($"Число {N} меньше нуля, задача невыполнима");
+}
+
